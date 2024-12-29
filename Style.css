@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat+Alternates:wght@500&family=Roboto:wght@100&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}  
+
+.background {
+    background-image: url(wallpaper.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+}
+
+a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a {
+    color: #575757;
+}
+
+.navbars {
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    display: flex;
+    z-index: 1;
+}
+
+.navbars .bar2 {
+    width: 100%;
+    height: 100%;
+    background: #E04B00;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: aliceblue;
+    z-index: 100;
+    
+}
+
+.home .home-info h1 {
+    font-size: 55px;
+    margin-left: 5px;
+    text-shadow: 0px 0px 15x rgb(0, 0, 0);
+}
+
+.home .home-info p {
+    display: inline-block;
+    font-size: 25px;
+    margin-top: -10px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
